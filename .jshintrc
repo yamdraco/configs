@@ -1,0 +1,32 @@
+// Options page of JSHint explains "enforcing" and "relaxing" options.
+//   ref: <http://www.jshint.com/docs/>
+// Example .jshintrc.
+//   ref: <https://github.com/tupton/dotfiles/blob/master/jshintrc>
+{
+  "globals": {
+    "console": true
+    // mocha
+  , "describe": true
+  , "it": true
+  , "suite": true
+  , "test": true
+    // vows
+  , "export": true
+  }
+
+  // Predefined globals that JSHint ignores
+, "node": true
+, "browser": true
+, "devel": true
+, "nonstandard": true
+, "undef": true
+, "unused": true
+
+  // Relaxing
+, "asi": true
+, "eqnull": true
+, "laxbreak": true
+, "laxcomma": true
+, "globalstrict": true
+, "loopfunc": true
+}

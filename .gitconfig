@@ -1,0 +1,41 @@
+[user]
+	name = <Name>
+	email = <Email>
+
+[alias]
+  ca = commit -a
+  ci = commit --interactive
+  co = checkout
+  st = !git status && echo && git l origin..HEAD
+  ls = ls-files --stage --abbrev
+  up = remote update
+  info = show-ref -h
+  d = whatchanged -p
+  l = log --graph --oneline --all --decorate
+  lg = log -p
+  b = branch -av
+  t = tag -n
+  who = shortlog -s --
+  graph = log --graph --oneline --all --decorate
+  f = !git fetch --all --tags --verbose && git remote --verbose update --prune
+  r = rebase -i HEAD~10
+  stat = log --oneline --shortstat
+  # e.g. git track v2.0.0 kites/v2.0.0
+  track = checkout --track -b
+
+[apply]
+  whitespace = strip
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+
+[push]
+  default = current
+[core]
+	editor = vim
