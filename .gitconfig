@@ -1,6 +1,6 @@
 [user]
-	name = <Name>
-	email = <Email>
+  name = <Name>
+  email = <Email>
 
 [alias]
   ca = commit -a
