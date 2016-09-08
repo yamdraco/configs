@@ -2,6 +2,8 @@
   "env": {
     "browser": true
   , "node": true
+  , "describe": true
+  , "it": true
   },
   "parserOptions": {
     "ecmaVersion": 6
@@ -19,6 +21,7 @@
     "one-var": 0,
     "space-before-function-paren": 0,
     "operator-linebreak": 0,
-    "indent": 0
+    "indent": 0,
+    "no-multiple-empty-lines": 0
   }
 }
